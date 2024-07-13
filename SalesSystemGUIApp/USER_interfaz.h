@@ -237,6 +237,7 @@ namespace SalesSystemGUIApp {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"USER_interfaz";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"AlquilEasier - inquilino";
 			this->Load += gcnew System::EventHandler(this, &USER_interfaz::USER_interfaz_Load);
 			this->ResumeLayout(false);

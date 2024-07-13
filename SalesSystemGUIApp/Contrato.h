@@ -425,6 +425,7 @@ namespace SalesSystemGUIApp {
 			this->Controls->Add(this->txtSegunda);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Contrato";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Contrato";
 			this->Load += gcnew System::EventHandler(this, &Contrato::Contrato_Load);
 			this->ResumeLayout(false);

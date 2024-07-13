@@ -273,9 +273,8 @@ namespace SalesSystemGUIApp {
 			this->DeudaMonto->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->DeudaMonto->Location = System::Drawing::Point(484, 94);
 			this->DeudaMonto->Name = L"DeudaMonto";
-			this->DeudaMonto->Size = System::Drawing::Size(62, 20);
+			this->DeudaMonto->Size = System::Drawing::Size(0, 20);
 			this->DeudaMonto->TabIndex = 38;
-			this->DeudaMonto->Text = L"label11";
 			// 
 			// AlquilerMonto
 			// 
@@ -283,9 +282,8 @@ namespace SalesSystemGUIApp {
 			this->AlquilerMonto->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->AlquilerMonto->Location = System::Drawing::Point(173, 62);
 			this->AlquilerMonto->Name = L"AlquilerMonto";
-			this->AlquilerMonto->Size = System::Drawing::Size(62, 20);
+			this->AlquilerMonto->Size = System::Drawing::Size(0, 20);
 			this->AlquilerMonto->TabIndex = 39;
-			this->AlquilerMonto->Text = L"label12";
 			// 
 			// AguaMonto
 			// 
@@ -293,9 +291,8 @@ namespace SalesSystemGUIApp {
 			this->AguaMonto->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->AguaMonto->Location = System::Drawing::Point(173, 97);
 			this->AguaMonto->Name = L"AguaMonto";
-			this->AguaMonto->Size = System::Drawing::Size(62, 20);
+			this->AguaMonto->Size = System::Drawing::Size(0, 20);
 			this->AguaMonto->TabIndex = 40;
-			this->AguaMonto->Text = L"label12";
 			// 
 			// LuzMonto
 			// 
@@ -303,9 +300,8 @@ namespace SalesSystemGUIApp {
 			this->LuzMonto->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->LuzMonto->Location = System::Drawing::Point(175, 138);
 			this->LuzMonto->Name = L"LuzMonto";
-			this->LuzMonto->Size = System::Drawing::Size(62, 20);
+			this->LuzMonto->Size = System::Drawing::Size(0, 20);
 			this->LuzMonto->TabIndex = 41;
-			this->LuzMonto->Text = L"label12";
 			// 
 			// InternetMonto
 			// 
@@ -313,9 +309,9 @@ namespace SalesSystemGUIApp {
 			this->InternetMonto->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->InternetMonto->Location = System::Drawing::Point(175, 172);
 			this->InternetMonto->Name = L"InternetMonto";
-			this->InternetMonto->Size = System::Drawing::Size(62, 20);
+			this->InternetMonto->Size = System::Drawing::Size(0, 20);
 			this->InternetMonto->TabIndex = 42;
-			this->InternetMonto->Text = L"label12";
+			this->InternetMonto->Click += gcnew System::EventHandler(this, &USER_Recibos::InternetMonto_Click);
 			// 
 			// SeguridadMonto
 			// 
@@ -323,9 +319,8 @@ namespace SalesSystemGUIApp {
 			this->SeguridadMonto->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->SeguridadMonto->Location = System::Drawing::Point(175, 207);
 			this->SeguridadMonto->Name = L"SeguridadMonto";
-			this->SeguridadMonto->Size = System::Drawing::Size(62, 20);
+			this->SeguridadMonto->Size = System::Drawing::Size(0, 20);
 			this->SeguridadMonto->TabIndex = 43;
-			this->SeguridadMonto->Text = L"label12";
 			// 
 			// FechaPago
 			// 
@@ -333,9 +328,8 @@ namespace SalesSystemGUIApp {
 			this->FechaPago->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->FechaPago->Location = System::Drawing::Point(484, 134);
 			this->FechaPago->Name = L"FechaPago";
-			this->FechaPago->Size = System::Drawing::Size(62, 20);
+			this->FechaPago->Size = System::Drawing::Size(0, 20);
 			this->FechaPago->TabIndex = 44;
-			this->FechaPago->Text = L"label11";
 			// 
 			// textServicios
 			// 
@@ -393,9 +387,8 @@ namespace SalesSystemGUIApp {
 			this->EstadoPago->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
 			this->EstadoPago->Location = System::Drawing::Point(484, 176);
 			this->EstadoPago->Name = L"EstadoPago";
-			this->EstadoPago->Size = System::Drawing::Size(62, 20);
+			this->EstadoPago->Size = System::Drawing::Size(0, 20);
 			this->EstadoPago->TabIndex = 50;
-			this->EstadoPago->Text = L"label11";
 			// 
 			// label4
 			// 
@@ -448,6 +441,7 @@ namespace SalesSystemGUIApp {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"USER_Recibos";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Consulta de Recibos";
 			this->Load += gcnew System::EventHandler(this, &USER_Recibos::USER_Recibos_Load);
 			this->panelRecibo->ResumeLayout(false);
@@ -609,5 +603,8 @@ namespace SalesSystemGUIApp {
 		this->Close();
 
 	}
+
+private: System::Void InternetMonto_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

@@ -497,6 +497,7 @@ namespace SalesSystemGUIApp {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"ADMIN_inq_recibos";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Agregar Recibo";
 			this->Load += gcnew System::EventHandler(this, &ADMIN_inq_recibos::ADMIN_inq_recibos_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvDeudas))->EndInit();

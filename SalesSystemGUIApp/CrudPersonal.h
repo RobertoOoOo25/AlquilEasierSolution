@@ -291,6 +291,7 @@ namespace SalesSystemGUIApp {
 			this->Controls->Add(this->label2);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"CrudPersonal";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Control del Personal";
 			this->Load += gcnew System::EventHandler(this, &CrudPersonal::CrudPersonal_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvPersonal))->EndInit();

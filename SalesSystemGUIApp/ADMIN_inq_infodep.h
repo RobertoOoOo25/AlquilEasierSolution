@@ -108,7 +108,7 @@ namespace SalesSystemGUIApp {
 			// 
 			this->textBox6->Enabled = false;
 			this->textBox6->Location = System::Drawing::Point(332, 384);
-			this->textBox6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox6->Margin = System::Windows::Forms::Padding(4);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(132, 22);
 			this->textBox6->TabIndex = 40;
@@ -117,7 +117,7 @@ namespace SalesSystemGUIApp {
 			// 
 			this->textBox4->Enabled = false;
 			this->textBox4->Location = System::Drawing::Point(332, 322);
-			this->textBox4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox4->Margin = System::Windows::Forms::Padding(4);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(132, 22);
 			this->textBox4->TabIndex = 38;
@@ -126,7 +126,7 @@ namespace SalesSystemGUIApp {
 			// 
 			this->textBox3->Enabled = false;
 			this->textBox3->Location = System::Drawing::Point(332, 268);
-			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox3->Margin = System::Windows::Forms::Padding(4);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(132, 22);
 			this->textBox3->TabIndex = 37;
@@ -135,7 +135,7 @@ namespace SalesSystemGUIApp {
 			// 
 			this->textMetraje->Enabled = false;
 			this->textMetraje->Location = System::Drawing::Point(332, 208);
-			this->textMetraje->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textMetraje->Margin = System::Windows::Forms::Padding(4);
 			this->textMetraje->Name = L"textMetraje";
 			this->textMetraje->Size = System::Drawing::Size(132, 22);
 			this->textMetraje->TabIndex = 36;
@@ -192,7 +192,7 @@ namespace SalesSystemGUIApp {
 			// 
 			this->textBox1->Enabled = false;
 			this->textBox1->Location = System::Drawing::Point(332, 151);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(132, 22);
 			this->textBox1->TabIndex = 30;
@@ -212,7 +212,7 @@ namespace SalesSystemGUIApp {
 			// pictureBox1
 			// 
 			this->pictureBox1->Location = System::Drawing::Point(49, 452);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(241, 158);
 			this->pictureBox1->TabIndex = 41;
@@ -223,7 +223,7 @@ namespace SalesSystemGUIApp {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Mongolian Baiti", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(332, 454);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(160, 70);
 			this->button1->TabIndex = 42;
@@ -235,7 +235,7 @@ namespace SalesSystemGUIApp {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Mongolian Baiti", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->Location = System::Drawing::Point(333, 542);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(160, 70);
 			this->button2->TabIndex = 43;
@@ -247,7 +247,7 @@ namespace SalesSystemGUIApp {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Mongolian Baiti", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->Location = System::Drawing::Point(73, 617);
-			this->button3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(193, 48);
 			this->button3->TabIndex = 44;
@@ -260,7 +260,7 @@ namespace SalesSystemGUIApp {
 			this->textDep->Enabled = false;
 			this->textDep->ForeColor = System::Drawing::SystemColors::Window;
 			this->textDep->Location = System::Drawing::Point(160, 84);
-			this->textDep->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textDep->Margin = System::Windows::Forms::Padding(4);
 			this->textDep->Name = L"textDep";
 			this->textDep->Size = System::Drawing::Size(175, 22);
 			this->textDep->TabIndex = 46;
@@ -281,7 +281,7 @@ namespace SalesSystemGUIApp {
 			// 
 			this->button4->BackColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->button4->Location = System::Drawing::Point(0, 0);
-			this->button4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button4->Margin = System::Windows::Forms::Padding(4);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(100, 28);
 			this->button4->TabIndex = 47;
@@ -300,7 +300,7 @@ namespace SalesSystemGUIApp {
 			});
 			this->dgvApartment->GridColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->dgvApartment->Location = System::Drawing::Point(585, 43);
-			this->dgvApartment->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dgvApartment->Margin = System::Windows::Forms::Padding(4);
 			this->dgvApartment->Name = L"dgvApartment";
 			this->dgvApartment->RowHeadersVisible = false;
 			this->dgvApartment->RowHeadersWidth = 51;
@@ -354,8 +354,9 @@ namespace SalesSystemGUIApp {
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label5);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"ADMIN_inq_infodep";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Información de Departamento";
 			this->Load += gcnew System::EventHandler(this, &ADMIN_inq_infodep::ADMIN_inq_infodep_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();

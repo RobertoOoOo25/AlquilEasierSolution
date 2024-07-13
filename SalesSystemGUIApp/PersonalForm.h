@@ -63,7 +63,7 @@ namespace SalesSystemGUIApp {
     private: System::Windows::Forms::Label^ label6;
 
 
-    private: System::Windows::Forms::Label^ label7;
+
 
     private: System::Windows::Forms::TabPage^ tabPage2;
     private: System::Windows::Forms::Label^ label2;
@@ -91,6 +91,7 @@ namespace SalesSystemGUIApp {
     private: System::Windows::Forms::DataGridViewTextBoxColumn^ HSalida;
     private: System::Windows::Forms::Button^ bttnLogout;
     private: System::Windows::Forms::PictureBox^ pictureBox1;
+    private: System::Windows::Forms::TextBox^ txtResponsible;
 
 
 
@@ -109,7 +110,6 @@ namespace SalesSystemGUIApp {
         {
             System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(PersonalForm::typeid));
             this->label6 = (gcnew System::Windows::Forms::Label());
-            this->label7 = (gcnew System::Windows::Forms::Label());
             this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
             this->label2 = (gcnew System::Windows::Forms::Label());
             this->comboBoxPisos = (gcnew System::Windows::Forms::ComboBox());
@@ -128,6 +128,7 @@ namespace SalesSystemGUIApp {
             this->BarraOpciones = (gcnew System::Windows::Forms::TabControl());
             this->bttnLogout = (gcnew System::Windows::Forms::Button());
             this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+            this->txtResponsible = (gcnew System::Windows::Forms::TextBox());
             this->tabPage2->SuspendLayout();
             this->tabPage1->SuspendLayout();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
@@ -139,23 +140,12 @@ namespace SalesSystemGUIApp {
             // 
             this->label6->AutoSize = true;
             this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-            this->label6->Location = System::Drawing::Point(114, 224);
+            this->label6->Location = System::Drawing::Point(116, 261);
             this->label6->Name = L"label6";
             this->label6->Size = System::Drawing::Size(99, 20);
             this->label6->TabIndex = 29;
             this->label6->Text = L"Bienvenid@";
             this->label6->Click += gcnew System::EventHandler(this, &PersonalForm::label6_Click);
-            // 
-            // label7
-            // 
-            this->label7->AutoSize = true;
-            this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
-            this->label7->Location = System::Drawing::Point(101, 346);
-            this->label7->Name = L"label7";
-            this->label7->Size = System::Drawing::Size(129, 20);
-            this->label7->TabIndex = 31;
-            this->label7->Text = L"Tipo de usuario:";
-            this->label7->Click += gcnew System::EventHandler(this, &PersonalForm::label7_Click);
             // 
             // tabPage2
             // 
@@ -344,19 +334,32 @@ namespace SalesSystemGUIApp {
             this->pictureBox1->TabIndex = 34;
             this->pictureBox1->TabStop = false;
             // 
+            // txtResponsible
+            // 
+            this->txtResponsible->BackColor = System::Drawing::SystemColors::Info;
+            this->txtResponsible->BorderStyle = System::Windows::Forms::BorderStyle::None;
+            this->txtResponsible->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10));
+            this->txtResponsible->Location = System::Drawing::Point(3, 303);
+            this->txtResponsible->Name = L"txtResponsible";
+            this->txtResponsible->Size = System::Drawing::Size(323, 19);
+            this->txtResponsible->TabIndex = 42;
+            this->txtResponsible->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+            this->txtResponsible->TextChanged += gcnew System::EventHandler(this, &PersonalForm::txtResponsible_TextChanged);
+            // 
             // PersonalForm
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->BackColor = System::Drawing::SystemColors::Info;
             this->ClientSize = System::Drawing::Size(1150, 571);
+            this->Controls->Add(this->txtResponsible);
             this->Controls->Add(this->pictureBox1);
             this->Controls->Add(this->bttnLogout);
-            this->Controls->Add(this->label7);
             this->Controls->Add(this->label6);
             this->Controls->Add(this->BarraOpciones);
             this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
             this->Name = L"PersonalForm";
+            this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
             this->Text = L"AlquilEasier - Personal";
             this->Load += gcnew System::EventHandler(this, &PersonalForm::PersonalForm_Load);
             this->tabPage2->ResumeLayout(false);
@@ -446,8 +449,9 @@ namespace SalesSystemGUIApp {
             return habitaciones->ToArray();
         }
 
-    private: System::Void PersonalForm_Load(System::Object^ sender, System::EventArgs^ e) {
-        // Configurar la primera pestaña por defecto
+    private: System::Void PersonalForm_Load(System::Object^ sender, System::EventArgs^ e); //{
+
+        /*// Configurar la primera pestaña por defecto
         BarraOpciones->SelectedIndex = 0;
         //pictureBox1->Image = Image::FromFile("C:\\ProyectoLPOO\\Logo.png");
         pictureBox1->Size = System::Drawing::Size(252, 149); // Tamaño deseado
@@ -460,8 +464,8 @@ namespace SalesSystemGUIApp {
         labelNombreCompleto->Font = gcnew System::Drawing::Font("Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular);
         // Agregar el Label al formulario
         this->Controls->Add(labelNombreCompleto);
-        showHorario();
-    }
+        showHorario();*/
+    //}
 
            void comboBoxPisos_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
                int pisoSeleccionado = comboBoxPisos->SelectedIndex + 1; // Obtener el piso seleccionado
@@ -614,6 +618,8 @@ namespace SalesSystemGUIApp {
         // Cerrar el formulario actual
         this->Close();
 
+    }
+    private: System::Void txtResponsible_TextChanged(System::Object^ sender, System::EventArgs^ e) {
     }
 };
 }
